@@ -1,0 +1,26 @@
+<div class="form-group">
+  <label for="id">id</label>
+  <input type="text" id="id" class="form-control" [(ngModel)]="_id">
+</div>
+<div class="form-group">
+  <label for="todo">todo</label>
+  <input type="text" id="todo" class="form-control" [(ngModel)]="todo">
+</div>
+<div class="form-group">
+  <label for="hasAttachment">hasAttachment</label>
+  <select id="hasAttachment" class="form-control" [(ngModel)]="hasAttachment">
+    <option value="true">true</option>
+    <option value="false">false</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="isDone">hasAttachment</label>
+  <select id="isDone" class="form-control" [(ngModel)]="isDone">
+    <option value="true">true</option>
+    <option value="false">false</option>
+  </select>
+</div>
+
+
+<button class="btn btn-primary" (click)="updateToDo()">Update ToDo</button>

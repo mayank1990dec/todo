@@ -1,0 +1,23 @@
+<div class="content-section introduction">
+  <div>
+    <span class="feature-title">DataTable -
+      <span class="subitem">ContextMenu</span>
+    </span>
+    <span>DataTable has exclusive integration with ContextMenu.</span>
+  </div>
+</div>
+
+<div class="content-section implementation">
+  <p-growl [value]="msgs"></p-growl>
+  <p-dataTable [value]="todos" selectionMode="single" [(selection)]="selectedTodo" [contextMenu]="cm">
+    <p-header>Right Click on Rows for ContextMenu</p-header>
+    <p-column field="id" header="id"></p-column>
+    <p-column field="userId" header="userId"></p-column>
+    <p-column field="todo" header="todo"></p-column>
+    <p-column field="hasAttachemet" header="hasAttachemet"></p-column>
+    <p-column field="isDone" header="isDone"></p-column>
+
+  </p-dataTable>
+
+  <p-contextMenu #cm [model]="items"></p-contextMenu>
+</div>

@@ -1,0 +1,7 @@
+<div class="col-xs-12 col-sm-4">
+  <div class="list-group">
+    <a [routerLink]="['/editToDo',user._id]" href="#" class="list-group-item" *ngFor="let user of userToDo">
+      {{user.todo}}
+    </a>
+  </div>
+</div>
